@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(77, 75, 75);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav > a:hover{
+            color: aqua;
+            text-decoration: underline;
+        }
+        nav > a::before{
+            content: ' - ';
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #noticias{
+            background-color: rgba(255, 233, 206, 0.733);
+            box-shadow: 2px 2px 3px rgb(212, 192, 167);
+            padding: 10px;
+            border-radius: 30px;
+
+        }
+        aside{
+            padding: 0px auto 20px auto;
+
+        }
+        aside > p {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        aside > h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 1px auto 0px auto;
+            width: 200px;
+            box-shadow: 1px 1px 1px rgb(197, 197, 178);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Noticia</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique id cumque natus reprehenderit, culpa incidunt ea explicabo fuga at cupiditate laboriosam magni placeat reiciendis aliquid libero. Reiciendis vel laboriosam impedit.</p>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem eaque aspernatur ea, accusantium numquam, impedit sapiente laboriosam expedita laudantium est dolor. Explicabo et placeat omnis quasi nulla recusandae possimus.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <aside>
+                <h2>Extras</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae illum ea fuga. Assumenda provident reprehenderit, ad dicta vel quibusdam voluptate nesciunt beatae vitae ea corporis veritatis asperiores sapiente in!</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gustavo</p>
+    </footer>
+</body>
+</html>
